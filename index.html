@@ -37,17 +37,22 @@
 			<form method="post" id="textAwesome">
 				<div data-role="fieldcontain">
 					<label for="input">Text to Awesomify: </label>
-					<input type="text" id="input" name="input" onkeydown="setText()" />
+					<input type="text" name="input" id="input" onkeydown="setText()" />
 				</div>
 				
 				<div data-role="fieldcontain"> 
 					<label for="textSize">Size: </label>
-					<input type="range" id="textSize" name="textSize" value="13" min="8" max="500" data-popup-enabled="true" onchange="setSize()" />
+					<input type="range" name="textSize" id="textSize" value="13" min="8" max="500" data-popup-enabled="true" onchange="setSize()" />
 				</div>
 					
 				<div data-role="fieldcontain"> 			
 					<label for="color">Color: </label>
 					<input type="color" name="color" id="color" value="" onchange="setColor()" />					
+				</div>
+				
+				<div data-role="fieldcontain"> 			
+					<label for="transparent">Transparency: </label>
+					<input type="range" name="transparent" id="transparent" value="" onchange="setTransparency()" />					
 				</div>
 				
 				<div data-role="fieldcontain">
@@ -59,14 +64,27 @@
 				
 				<div data-role="fieldcontain">
 					<label for="capitalization" class="select">Capitalization: </label>
-					<select name="capitalization" id="capitalization">
-					   <option value="UPPERCASE">UPPERCASE</option>
+					<select name="capitalization" id="capitalization" onchange="setCapitalization()">
+					   <option value="uppercase">UPPERCASE</option>
 					   <option value="lowercase">lowercase</option>
 					   <option value="RaNDom">RaNDom</option>
 					</select>
 				</div>
-				<a href="#intro" data-role="button" data-inline="true">Cancel</a>
-				<a href="#" data-role="button" data-inline="true" data-theme="b" onclick="total()">GO GO GO!</a>
+				
+				<div data-role="fieldcontain">
+					<!--<fieldset data-role="controlgroup">
+						<legend>Agree to the terms:</legend>-->
+						<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+						<label for="checkbox-1">WordWrap?</label>
+					<!--</fieldset>-->
+				</div>
+				
+				<!--<div data-role="controlgroup">
+					<a href="#intro" data-role="button" data-inline="true">Cancel</a>
+					<a href="#" data-role="button" data-inline="true" data-theme="b" onclick="total()">GO GO GO!</a>
+				</div>
+				-->
+				
 				<div id="product">
 					<p id="textResult"> </p>
 				</div>
