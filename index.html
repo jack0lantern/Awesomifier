@@ -52,12 +52,22 @@
 					<label for="color">Color: </label>
 					<input type="color" name="color" id="color" value="" onchange="setColor()" />					
 				</div>
+				
 				<div data-role="fieldcontain">
 					<label for="font" class="select">Font: </label>
 					<select name="font" id="font" onchange="setFont()">
 					   <option value="Arial">Arial</option>
 					   <option value='"Times New Roman"'>Times New Roman</option>
 					   <option value="Monospace">Monospace</option>
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="capitalization" class="select">Capitalization: </label>
+					<select name="capitalization" id="capitalization">
+					   <option value="UPPERCASE">UPPERCASE</option>
+					   <option value="lowercase">lowercase</option>
+					   <option value="RaNDom">RaNDom</option>
 					</select>
 				</div>
 				<a href="#intro" data-role="button" data-inline="true">Cancel</a>
