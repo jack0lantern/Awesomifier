@@ -1,5 +1,5 @@
 function getFonts(){
-    var fonts = ['Arial', 'Monospace', '"Times New Roman"', 'Verdana'];
+    var fonts = ['Arial', 'Monospace', 'Times New Roman', 'Verdana'];
     var begin = '<option value=\"';
     var middle = '\">';
     var end = '</option>';
@@ -9,7 +9,21 @@ function getFonts(){
     }
     document.getElementById("font").innerHTML = options;
 }
-getFonts();
+
+function setTransparent(){
+    var textResult= $("#textResult");
+    var trans = document.forms["textAwesome"]["transparent"].value; 
+    textResult.css("opacity", trans);
+}
+
+function wordWrap(){
+    var textResult= $("#textResult");
+    var trans = document.forms["textAwesome"]["wrap"].value;
+    if(trans)
+        textResult.css("word-wrap", "break-word");
+    else
+        textResult.css("word-wrap", "none");
+}
 
 function setText(){
     var textToAwesome = document.forms["textAwesome"]["input"].value;
@@ -53,19 +67,4 @@ function setCapitalization(){
 	}
 	$("input").val(newText);
 	setText();
-}
-	
-
-function total(){
-    var textResult= $("#textResult");
-    var textToAwesome = document.forms["textAwesome"]["input"].value;
-    var size = document.forms["textAwesome"]["textSize"].value; 
-    var textColor = document.forms["textAwesome"]["color"].value;
-    var font = document.forms["textAwesome"]["font"].value;
-    
-    textResult.css("color", textColor);
-    textResult.css("font-size", size + "px");
-    textResult.css("font-family", font);
-    document.getElementById("textResult").innerHTML = textToAwesome;
-        //"<p id='textResult' style='color:" + textColor + "; font-size: " + size + "px;' >" + 
 }
