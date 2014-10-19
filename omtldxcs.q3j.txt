@@ -1,0 +1,23 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# Explicit paths specified without -i or -o; assuming --only paths...
+# On branch master
+# Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+#   (use "git pull" to update your local branch)
+#
+# Changes to be committed:
+#	modified:   product.js
+#
+# Changes not staged for commit:
+#	modified:   index.html
+#
+# Untracked files:
+#	34b2ed15.ot3.txt
+#	3fvtw32f.lco.txt
+#	55vmpcmv.td2.txt
+#	kfjnoo2u.rsf.txt
+#	scripts.js
+#
+
+adsf
