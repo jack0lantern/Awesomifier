@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
     font-family: Arial, Tahoma;
 }
 
@@ -8,3 +9,7 @@ body {
     -webkit-transition-delay: 0.5s;
     transition-delay: 0.5s;
 } // this probably does something
+=======
+    font-family: Arial, Tahoma, Helvetica;
+}
+>>>>>>> 73b2d3bb08ab88550e0c8f7ad06bf259fb665356
