@@ -80,6 +80,12 @@ function setCapitalization(){
 	setText();
 }
 
+function setShadow(){
+    var textResult= $("#textResult");
+    var shadow = document.forms["textAwesome"]["shadow"].value + "px ";
+    textResult.css("text-shadow", shadow + shadow + "#000");
+}
+
 function setTextDeco(textType, id){
 	var textResult= $("#textResult");
 	var transform = document.forms["textAwesome"][id].value;

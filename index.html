@@ -66,7 +66,11 @@
 						<option value="RaNDom">RaNDom</option>
 					</select>
 				</div>
-				
+                
+				<div data-role="fieldcontain">
+					<label for="shadow" class="select">Shadow: </label>
+					   <input type="range" name="shadow" id="shadow" value="0" min="-50" max="50" data-popup-enabled="true" onchange="setShadow()" />
+				</div>
 
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
