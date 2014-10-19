@@ -1,6 +1,5 @@
 body {
     font-family: Arial, Tahoma, Helvetica;
-    background-color: #ffee11; /*default background color. change as necessary */
 }
 
 .trans1{
@@ -17,6 +16,10 @@ body {
 }
 
 #product{
-    height: 100%;
+    height: 768px;
     /*background-color is dynamic*/
+}
+
+#goButton{
+    margin: auto;
 }
