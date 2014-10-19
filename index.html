@@ -39,20 +39,7 @@
 					<label for="input">Text to Awesomify: </label>
 					<input type="text" name="input" id="input" onkeydown="setText();storeOriginal()" />
 				</div>
-					
-<<<<<<< HEAD
-				<div data-role="fieldcontain"> 			
-					<label for="color">Color: </label>
-					<input type="color" name="color" id="color" value="" onchange="setColor()" />
-				</div>
-				
-=======
-				<div data-role="fieldcontain" data-type="horizontal"> 			
-                    <label for="color">Color: </label>
-                    <input type="color" name="color" id="color" value="" data-inline="true" onchange="setColor()" />
-                </div>
-                    	
->>>>>>> e312a8d95af7f803195cbd03e32dd22e5ac4e564
+
 				<div data-role="fieldcontain"> 			
 					<label for="transparent">Transparency: </label>
 					<input type="range" name="transparent" id="transparent" value="100" min="0" max="100" onchange="setTransparent()" />					
@@ -82,7 +69,7 @@
 				
 
 				<div data-role="fieldcontain">
-					<fieldset data-role="controlgroup" data-type="horizontal">
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
 						<legend>Font styling:</legend>
 						<input type="checkbox" name="bold" id="bold" value="bold" class="textDeco" onchange='setTextDeco("font-weight","bold")' />
 						<label for="bold"><br/><b> b </b></label>
@@ -100,6 +87,16 @@
 						<label for="line-through"><br/><strike>strike</strike></label>  
 					</fieldset>
 				</div>
+				
+			<div data-role="fieldcontain"> 			
+				<fieldset data-role="controlgroup" data-mini="true">
+				<legend>Color:</legend>
+				<!--<label for="color">Color: </label>-->
+				<input type="color" name="color" id="color" value="" onchange="setColor()" />
+				<a href="#" data-role="button" data-inline="true" data-theme="b" onclick="randomColor()">Random!</a>
+				</fieldset>
+            </div>
+                    	
 				<!--<div data-role="controlgroup">
 					<a href="#intro" data-role="button" data-inline="true">Cancel</a>
 					<a href="#" data-role="button" data-inline="true" data-theme="b" onclick="total()">GO GO GO!</a>

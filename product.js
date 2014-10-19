@@ -45,9 +45,10 @@ function setColor(){
 
 function randomColor(){
     var textResult= $("#textResult");
-    var textColor = "" + 0xFFFFFF*Math.random();
-    document.forms["textAwesome"]["color"].value = textColor;
+    var textColor = "" + Math.round(0x111111*Math.random());
+	textColor = "#" + textColor; 
     textResult.css("color", textColor);
+	return false;
 }
 
 function setFont(){
