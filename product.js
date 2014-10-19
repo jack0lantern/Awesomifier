@@ -13,13 +13,13 @@ function getFonts(){
 function setTransparent(){
     var textResult= $("#textResult");
     var trans = document.forms["textAwesome"]["transparent"].value; 
-    textResult.css("opacity", trans);
+    textResult.css("opacity", trans/100);
 }
 
 function wordWrap(){
     var textResult= $("#textResult");
-    var trans = document.forms["textAwesome"]["wrap"].value;
-        textResult.css("word-wrap", trans);
+    var transform = document.forms["textAwesome"]["wrap"].value;
+    textResult.css("word-wrap", document.forms["textAwesome"]["wrap"].checked? transform: "initial");
 }
 
 function setText(){
