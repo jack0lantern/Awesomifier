@@ -1,3 +1,15 @@
+function getFonts(){
+    var fonts = ['Arial', 'Monospace', '"Times New Roman"', 'Verdana'];
+    var begin = '<option value=\"';
+    var middle = '\">';
+    var end = '</option>';
+    var options = "";
+    for(var i = 0; i < fonts.length; i++){
+        options += begin + fonts[i] + middle + fonts[i] + end;
+    }
+    document.getElementById("font").innerHTML = options;
+}
+getFonts();
 
 function setText(){
     var textToAwesome = document.forms["textAwesome"]["input"].value;
