@@ -15,24 +15,34 @@ Text Awesomifier
 </head>
 
 <body>
-	<div id ="intro">
-		<h1>Welcome Text Awesomifier</h1>
-		<p>Enter your the text you want and choose options to make it awesome.</p>
+</div>
+	<div id ="intro" data-role="page">
+	<div data-role="header">
+		<h1>Welcome to Text Awesomifier</h1>
 	</div>
-	<div id="inputDiv">
-		<form id="textInput">
-			Text to Awesomify: <input type="text" name="input" /> <br/>
-			<fieldset> 
-				<legend>Text Awesomify:</legend>
-				<label> Color: </label>
-				<input class="color" name="textColor" value="66ff00"><br/>
-				<label>Size: </label>
+		
+	
+	<div data-role="content">	
+	<p>Enter your the text you want and choose options to make it awesome.</p>
+		<form action="form.php" method="post">
+			<div data-role="fieldcontain"> 
+				<label for="input">Text to Awesomify: </label>
+				<input type="text" name="input" />
+			</div>
+			<div data-role="fieldcontain"> 
+				<label for="textSize"> Size:</label>
 				<input type="range" name="textSize" value="12" min="8" max="500" data-popup-enabled="true"/><br/>
-				<input/>
-			</fieldset>
-			
+			</div>
+				<!--<label> Color: </label>
+				<input class="color" name="textColor" value="66ff00"><br/>
+				-->
+			<div data-role="fieldcontain"> 				
+				<label for="color">Color:</label>
+				<input type="color" name="color" id="color" value="" />
+			</div>
 		</form>
     </div>
+	</div>
     <div id="product">
     
     </div>
