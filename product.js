@@ -51,6 +51,13 @@ function randomColor(){
 	return false;
 }
 
+function randomSize(){
+    var textResult= $("#textResult");
+    var textSize = Math.round(492 * Math.random())+ 8;
+    textResult.css("font-size", textSize + "px");
+	return false;
+}
+
 function setFont(){
     var textResult= $("#textResult");
     var font = document.forms["textAwesome"]["font"].value;
@@ -91,8 +98,6 @@ function setTextDeco(textType, id){
 	var textResult= $("#textResult");
 	var transform = document.forms["textAwesome"][id].value;
 	textResult.css(textType, document.forms["textAwesome"][id].checked? transform: "initial");
-	
-
 }
 
 function setLineThrough(){
