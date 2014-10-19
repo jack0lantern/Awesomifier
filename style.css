@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Tahoma, Helvetica;
+    background-color: #ffee11; /*default background color. change as necessary */
 }
 
 .trans1{
@@ -7,4 +8,15 @@ body {
     transition: opacity 2s;
     -webkit-transition-delay: 0.5s;
     transition-delay: 0.5s;
-} // this probably does something
+} /* this probably does something... or nothing. I just ripped it from the dudes sites and hoped it would
+/ create a smooth transition into the content but it didnt :( */
+
+#intro{
+    position: relative;
+    height: 768px;
+}
+
+#product{
+    height: 100%;
+    /*background-color is dynamic*/
+}
