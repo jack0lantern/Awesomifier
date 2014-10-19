@@ -29,7 +29,6 @@
 			<h2>Welcome</h2>
 			<p>Enter the text you want and make it awesome!</p>
 			<a href="#form" data-role="button">Let's Go!</a>
-
 		</div>
 	</div>
 	<div id ="form" data-role="page">
@@ -41,12 +40,12 @@
 			<form method="post" id="textAwesome">
 				<div data-role="fieldcontain">
 					<label for="input">Text to Awesomify: </label>
-					<input type="text" id="input" name="input"/>
+					<input type="text" id="input" name="input" onkeydown="setText()" />
 				</div>
 				
 				<div data-role="fieldcontain"> 
 					<label for="textSize">Size: </label>
-					<input type="range" id="textSize" name="textSize" value="13" min="8" max="500" data-popup-enabled="true"/>
+					<input type="range" id="textSize" name="textSize" value="13" min="8" max="500" data-popup-enabled="true" onchange="setSize()" />
 				</div>
 					
 				<div data-role="fieldcontain"> 			
@@ -55,7 +54,7 @@
 				</div>
 				<div data-role="fieldcontain">
 					<label for="font" class="select">Font: </label>
-					<select name="font" id="font">
+					<select name="font" id="font" onchange="setFont()">
 					   <option value="Arial">Arial</option>
 					   <option value='"Times New Roman"'>Times New Roman</option>
 					   <option value="Monospace">Monospace</option>
