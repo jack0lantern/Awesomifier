@@ -2,16 +2,7 @@ body {
     font-family: Arial, Tahoma, Helvetica;
 }
 
-.trans1{
-    -webkit-transition: opacity 2s;
-    transition: opacity 2s;
-    -webkit-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-} /* this probably does something... or nothing. I just ripped it from the dudes sites and hoped it would
-/ create a smooth transition into the content but it didnt :( */
-
 #intro{
-    position: relative;
     height: 768px;
 }
 
