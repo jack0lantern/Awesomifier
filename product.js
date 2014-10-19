@@ -42,7 +42,7 @@ function setCapitalization(){
 		newText += textToAwesome.toUpperCase();
 	}else if(capitalization === "lowercase"){
 		newText += textToAwesome.toLowerCase();
-	}else{
+	}else if(capitalization === "RaNDom"){
 		for (var index = 0; index < textToAwesome.length; index++) {
 			var capitalize = Math.random() < .5;
 			if(capitalize)

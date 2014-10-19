@@ -39,11 +39,6 @@
 					<label for="input">Text to Awesomify: </label>
 					<input type="text" name="input" id="input" onkeydown="setText()" />
 				</div>
-				
-				<div data-role="fieldcontain"> 
-					<label for="textSize">Size: </label>
-					<input type="range" name="textSize" id="textSize" value="13" min="8" max="500" data-popup-enabled="true" onchange="setSize()" />
-				</div>
 					
 				<div data-role="fieldcontain"> 			
 					<label for="color">Color: </label>
@@ -53,6 +48,11 @@
 				<div data-role="fieldcontain"> 			
 					<label for="transparent">Transparency: </label>
 					<input type="range" name="transparent" id="transparent" value="" onchange="setTransparency()" />					
+				</div>
+				
+				<div data-role="fieldcontain"> 
+					<label for="textSize">Size: </label>
+					<input type="range" name="textSize" id="textSize" value="13" min="8" max="500" data-popup-enabled="true" onchange="setSize()" />
 				</div>
 				
 				<div data-role="fieldcontain">
@@ -65,20 +65,33 @@
 				<div data-role="fieldcontain">
 					<label for="capitalization" class="select">Capitalization: </label>
 					<select name="capitalization" id="capitalization" onchange="setCapitalization()">
-					   <option value="uppercase">UPPERCASE</option>
-					   <option value="lowercase">lowercase</option>
-					   <option value="RaNDom">RaNDom</option>
+						<option value="none">None</option>
+						<option value="uppercase">UPPERCASE</option>
+						<option value="lowercase">lowercase</option>
+						<option value="RaNDom">RaNDom</option>
 					</select>
 				</div>
 				
+
 				<div data-role="fieldcontain">
-					<!--<fieldset data-role="controlgroup">
-						<legend>Agree to the terms:</legend>-->
-						<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
-						<label for="checkbox-1">WordWrap?</label>
-					<!--</fieldset>-->
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<legend>Font styling:</legend>
+						<input type="checkbox" name="bold" id="bold" value="bold"/>
+						<label for="bold"><b>b</b></label>
+
+						<input type="checkbox" name="italics" id="italics" value="italic"/>
+						<label for="italics"><em>i</em></label>
+
+						<input type="checkbox" name="underline" id="underline" value="italic" />
+						<label for="underline"><u>u</u></label>   
+						
+						<input type="checkbox" name="wrap" id="wrap" value="wrap" />
+						<label for="wrap">word wrap</label>
+						
+						<input type="checkbox" name="wrap" id="wrap" value="wrap" />
+						<label for="wrap">word wrap</label>  
+					</fieldset>
 				</div>
-				
 				<!--<div data-role="controlgroup">
 					<a href="#intro" data-role="button" data-inline="true">Cancel</a>
 					<a href="#" data-role="button" data-inline="true" data-theme="b" onclick="total()">GO GO GO!</a>
