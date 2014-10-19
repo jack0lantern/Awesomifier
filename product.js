@@ -26,7 +26,7 @@ function setFont(){
 }
 
 function setCapitalization(){
-	var capitalization = do.forms["textAwesome"]["capitalization"].value;
+	var capitalization = document.forms["textAwesome"]["capitalization"].value;
 	var newText = "";
 	if(capitalization.equals("uppercase")){
 		newText += capitalization.toUpperCase();
