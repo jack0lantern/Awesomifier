@@ -1,4 +1,3 @@
-var textResult= $("#textResult");
 
 function setText(){
     var textToAwesome = document.forms["textAwesome"]["input"].value;
@@ -6,18 +5,21 @@ function setText(){
 }
 
 function setSize(){
+    var textResult= $("#textResult");
     var size = document.forms["textAwesome"]["textSize"].value; 
     textResult.css("font-size", size + "px");
     document.getElementById("textResult").innerHTML = textToAwesome;
 }
 
 function setColor(){
+    var textResult= $("#textResult");
     var textColor = document.forms["textAwesome"]["color"].value;
     textResult.css("color", textColor);
     document.getElementById("textResult").innerHTML = textToAwesome;
 }
 
 function setFont(){
+    var textResult= $("#textResult");
     var font = document.forms["textAwesome"]["font"].value;
     textResult.css("font-family", font);
     document.getElementById("textResult").innerHTML = textToAwesome;
@@ -46,6 +48,7 @@ function setCapitalization(){
 	
 
 function total(){
+    var textResult= $("#textResult");
     var textToAwesome = document.forms["textAwesome"]["input"].value;
     var size = document.forms["textAwesome"]["textSize"].value; 
     var textColor = document.forms["textAwesome"]["color"].value;
