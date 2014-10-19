@@ -3,7 +3,7 @@ function storeOriginal() {
 	originalText = document.forms["textAwesome"]["input"].value;
 }
 function getFonts(){
-    var fonts = ['Arial', 'Batang', 'Monospace', 'Symbol','Times New Roman', 'Verdana'];
+    var fonts = ['Arial', 'Batang', 'Cursive', 'Courier', 'Monospace', 'Symbol','Times New Roman', 'Verdana'];
     var begin = '<option value=\"';
     var middle = '\">';
     var end = '</option>';
@@ -43,10 +43,16 @@ function setColor(){
     textResult.css("color", textColor);
 }
 
+function setBgColor(){
+    var textResult= $("#product");
+    var textColor = document.forms["textAwesome"]["bgcolor"].value;
+    textResult.css("background-color", textColor);
+}
+
 function randomColor(){
     var textResult= $("#textResult");
-    var textColor = "" + Math.round(0x111111*Math.random());
-	textColor = "#" + textColor; 
+    var textColor = Math.round(0xffffff*Math.random());
+	textColor = "#" + textColor.toString(16); 
     textResult.css("color", textColor);
 	return false;
 }

@@ -25,7 +25,7 @@
 		<div data-role="content">	
 			<h2>Welcome</h2>
 			<p>Enter the text you want and make it awesome!</p>
-			<a href="#form" data-role="button">Let's Go!</a>
+			<a href="#form" data-role="button" id="goButton">Let's Go!</a>
 		</div>
 	</div>
 	<div id ="form" data-role="page">
@@ -94,9 +94,13 @@
 				
 			<div data-role="fieldcontain"> 			
 				<fieldset data-role="controlgroup" data-mini="true">
-				<legend>Color:</legend>
-				<!--<label for="color">Color: </label>-->
+				<legend>Color: </legend>
 				<input type="color" name="color" id="color" value="" onchange="setColor()" />
+                </fieldset>
+                <fieldset data-role="controlgroup" data-mini="true">
+				<legend>Background Color: </legend>
+				<input type="color" name="bgcolor" id="bgcolor" value="" onchange="setBgColor()" />
+                    
 				<a href="#" data-role="button" data-inline="true" data-theme="b" onclick="randomColor()">Random Color!</a>
 				</fieldset>
             </div>
