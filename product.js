@@ -1,3 +1,7 @@
+var originalText = "";
+function storeOriginal() {
+	originalText = document.forms["textAwesome"]["input"].value;
+}
 function getFonts(){
     var fonts = ['Arial', 'Monospace', 'Times New Roman', 'Verdana'];
     var begin = '<option value=\"';
@@ -50,9 +54,9 @@ function setCapitalization(){
 	var capitalization = document.forms["textAwesome"]["capitalization"].value;
 	var newText = "";
 	if(capitalization === "uppercase"){
-		newText += textToAwesome.toUpperCase();
+		newText = textToAwesome.toUpperCase();
 	}else if(capitalization === "lowercase"){
-		newText += textToAwesome.toLowerCase();
+		newText = textToAwesome.toLowerCase();
 	}else if(capitalization === "RaNDom"){
 		for (var index = 0; index < textToAwesome.length; index++) {
 			var capitalize = Math.random() < .5;
@@ -61,6 +65,8 @@ function setCapitalization(){
 			else
 				newText += textToAwesome.charAt(index).toLowerCase();
 		}
+	}else{
+		newText = originalText;
 	}
 	$("input").val(newText);
 	setText();

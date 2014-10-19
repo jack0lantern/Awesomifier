@@ -37,12 +37,12 @@
 			<form method="post" id="textAwesome">
 				<div data-role="fieldcontain">
 					<label for="input">Text to Awesomify: </label>
-					<input type="text" name="input" id="input" onkeydown="setText()" />
+					<input type="text" name="input" id="input" onkeydown="setText();storeOriginal()" />
 				</div>
 					
 				<div data-role="fieldcontain"> 			
 					<label for="color">Color: </label>
-					<input type="color" name="color" id="color" value="" onchange="setColor()" />					
+					<input type="color" name="color" id="color" value="" onchange="setColor()" />
 				</div>
 				
 				<div data-role="fieldcontain"> 			
