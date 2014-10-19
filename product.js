@@ -34,7 +34,7 @@ function setCapitalization(){
 		newText += capitalization.toLowerCase();
 	}else{
 		var textLength = capitalization.length();
-		for(int index = 0; index < capitalization.length; index++) {
+		for (var index = 0; index < capitalization.length; index++) {
 			var capitalize = Math.random() < .5;
 			if(capitalize)
 				newText += capitalization.charAt(index).toUpperCase();
