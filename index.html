@@ -76,20 +76,20 @@
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup" data-type="horizontal">
 						<legend>Font styling:</legend>
-						<input type="checkbox" name="bold" id="bold" value="bold"/>
-						<label for="bold"><b>b</b></label>
+						<input type="checkbox" name="bold" id="bold" value="bold" class="textDeco" onchange="setBold()" />
+						<label for="bold"><br/><b> b </b></label>
 
-						<input type="checkbox" name="italics" id="italics" value="italic"/>
-						<label for="italics"><em>i</em></label>
+						<input type="checkbox" name="italics" id="italics" value="italic" class="textDeco" onchange="setItalics" />
+						<label for="italics"><br/><em> i </em></label>
 
-						<input type="checkbox" name="underline" id="underline" value="italic" />
-						<label for="underline"><u>u</u></label>   
+						<input type="checkbox" name="underline" id="underline" value="italic" class="textDeco" onchange="setUnderline" />
+						<label for="underline"><br/><u> u </u></label>   
 						
-						<input type="checkbox" name="wrap" id="wrap" value="wrap" />
-						<label for="wrap">word wrap</label>
+						<input type="checkbox" name="wrap" id="wrap" value="wrap" class="textDeco" onchange="setWrap" />
+						<label for="wrap">word<br/>wrap</label>
 						
-						<input type="checkbox" name="wrap" id="wrap" value="wrap" />
-						<label for="wrap">word wrap</label>  
+						<input type="checkbox" name="line-through" id="line-through" value="line-through" class="textDeco" onChange="setWrap"/>
+						<label for="line-through"><br/><strike>strike</strike></label>  
 					</fieldset>
 				</div>
 				<!--<div data-role="controlgroup">
