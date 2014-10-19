@@ -93,13 +93,17 @@
 				</div>
 				
 			<div data-role="fieldcontain"> 			
-				<fieldset data-role="controlgroup" data-mini="true">
+				<fieldset data-role="controlgroup">
 				<legend>Color:</legend>
-				<!--<label for="color">Color: </label>-->
+				<label for="color">Color: </label>
 				<input type="color" name="color" id="color" value="" onchange="setColor()" />
-				<a href="#" data-role="button" data-inline="true" data-theme="b" onclick="randomColor()">Random Color!</a>
-				</fieldset>
             </div>
+			
+			<div data-role="controlgroup" data-mini="true">
+			<a href="#" data-role="button" data-inline="true" data-theme="b" onclick="randomColor()">Random Color!</a>
+			<a href="#" data-role="button" data-inline="true" data-theme="b" onclick="randomSize()">Random Size!</a>
+			<a href="#" data-role="button" data-inline="true" data-theme="b" onclick="randomSize()">Randomnize All!</a>
+			</div>
                     	
 				<!--<div data-role="controlgroup">
 					<a href="#intro" data-role="button" data-inline="true">Cancel</a>
