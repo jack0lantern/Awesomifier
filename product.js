@@ -12,8 +12,8 @@ function getFonts(){
 
 function setTransparent(){
     var textResult= $("#textResult");
-    var trans = document.forms["textAwesome"]["transparent"].value; 
-    textResult.css("opacity", trans);
+    var wrap = document.forms["textAwesome"]["transparent"].value; 
+    textResult.css("opacity", wrap);
 }
 
 function wordWrap(){
@@ -69,5 +69,16 @@ function setCapitalization(){
 function setTextDeco(textType, id){
 	var textResult= $("#textResult");
 	var transform = document.forms["textAwesome"][id].value;
-	textResult.css(textType, transform);
+	textResult.css(textType, document.forms["textAwesome"][id].checked? transform: "initial");
+	
+
+}
+
+function setLineThrough(){
+	var textResult= $("#textResult");
+	var textToAwesome = document.forms["textAwesome"]["input"].value;
+	var strike = document.forms["textAwesome"]["line-through"].value;
+	var open = document.forms["textAwesome"]["line-through"].checked? "<strike>": "";
+	var close = document.forms["textAwesome"]["line-through"].checked? "</strike>": "";
+	document.getElementById("textResult").innerHTML =  open + textToAwesome + close;
 }
