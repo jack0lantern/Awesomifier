@@ -84,6 +84,7 @@ function setShadow(){
     var textResult= $("#textResult");
     var shadow = document.forms["textAwesome"]["shadow"].value + "px ";
     textResult.css("text-shadow", shadow + shadow + "#000");
+	textResult.css("opacity", .7);
 }
 
 function setTextDeco(textType, id){
