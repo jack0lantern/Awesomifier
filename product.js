@@ -41,7 +41,6 @@ function setCapitalization(){
 	}
 	$("input").val(newText);
 	setText();
-	
 }
 	
 
