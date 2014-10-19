@@ -19,10 +19,7 @@ function setTransparent(){
 function wordWrap(){
     var textResult= $("#textResult");
     var trans = document.forms["textAwesome"]["wrap"].value;
-    if(trans)
-        textResult.css("word-wrap", "break-word");
-    else
-        textResult.css("word-wrap", "none");
+        textResult.css("word-wrap", trans);
 }
 
 function setText(){
@@ -67,4 +64,10 @@ function setCapitalization(){
 	}
 	$("input").val(newText);
 	setText();
+}
+
+function setTextDeco(textType, id){
+	var textResult= $("#textResult");
+	var transform = document.forms["textAwesome"][id].value;
+	textResult.css(textType, transform);
 }
