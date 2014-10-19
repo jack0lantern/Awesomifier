@@ -4,6 +4,7 @@
 <head>
 <script src="jQuery-1.11.1.js" type="text/javascript"></script>
 <script type="text/javascript" src="jscolor/jscolor.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
 <link rel="stylesheet" href="style.css" />
 <title>
 Text Awesomifier
@@ -15,8 +16,9 @@ Text Awesomifier
 	<div id ="intro">
 		<h1>Welcome Text Awesomifier</h1>
 		<p>Enter your the text you want and choose options to make it awesome.</p>
+        <button id="goButton" onClick="$('#inputDiv').addClass('trans1')"><a href="#product">Let's go!</a></button>
 	</div>
-	<div id="inputDiv">
+	<div id="inputDiv" style="height: 1000px;">
 		<form id="textInput">
 			Text to Awesomify: <input type="text" id="input" /> <br/>
 			<fieldset>
