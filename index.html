@@ -40,11 +40,19 @@
 					<input type="text" name="input" id="input" onkeydown="setText();storeOriginal()" />
 				</div>
 					
+<<<<<<< HEAD
 				<div data-role="fieldcontain"> 			
 					<label for="color">Color: </label>
 					<input type="color" name="color" id="color" value="" onchange="setColor()" />
 				</div>
 				
+=======
+				<div data-role="fieldcontain" data-type="horizontal"> 			
+                    <label for="color">Color: </label>
+                    <input type="color" name="color" id="color" value="" data-inline="true" onchange="setColor()" />
+                </div>
+                    	
+>>>>>>> e312a8d95af7f803195cbd03e32dd22e5ac4e564
 				<div data-role="fieldcontain"> 			
 					<label for="transparent">Transparency: </label>
 					<input type="range" name="transparent" id="transparent" value="100" min="0" max="100" onchange="setTransparent()" />					

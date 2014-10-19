@@ -43,6 +43,13 @@ function setColor(){
     textResult.css("color", textColor);
 }
 
+function randomColor(){
+    var textResult= $("#textResult");
+    var textColor = "" + 0xFFFFFF*Math.random();
+    document.forms["textAwesome"]["color"].value = textColor;
+    textResult.css("color", textColor);
+}
+
 function setFont(){
     var textResult= $("#textResult");
     var font = document.forms["textAwesome"]["font"].value;
