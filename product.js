@@ -12,14 +12,19 @@ function getFonts(){
 
 function setTransparent(){
     var textResult= $("#textResult");
+<<<<<<< HEAD
     var wrap = document.forms["textAwesome"]["transparent"].value; 
     textResult.css("opacity", wrap);
+=======
+    var trans = document.forms["textAwesome"]["transparent"].value; 
+    textResult.css("opacity", trans/100);
+>>>>>>> d804b82fcbf4530ec117658d57773a6a17a5e66d
 }
 
 function wordWrap(){
     var textResult= $("#textResult");
-    var trans = document.forms["textAwesome"]["wrap"].value;
-        textResult.css("word-wrap", trans);
+    var transform = document.forms["textAwesome"]["wrap"].value;
+    textResult.css("word-wrap", document.forms["textAwesome"]["wrap"].checked? transform: "initial");
 }
 
 function setText(){
