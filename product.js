@@ -1,3 +1,5 @@
+var textResult= $("#textResult");
+
 function setText(){
     var textToAwesome = document.forms["textAwesome"]["input"].value;
     document.getElementById("textResult").innerHTML = textToAwesome;
@@ -6,7 +8,7 @@ function setText(){
 function setSize(){
     var size = document.forms["textAwesome"]["textSize"].value; 
     textResult.css("font-size", size + "px");
-    //document.getElementById("textResult").innerHTML = textToAwesome;
+    document.getElementById("textResult").innerHTML = textToAwesome;
 }
 
 function setColor(){
@@ -26,7 +28,6 @@ function total(){
     var size = document.forms["textAwesome"]["textSize"].value; 
     var textColor = document.forms["textAwesome"]["color"].value;
     var font = document.forms["textAwesome"]["font"].value;
-    var textResult= $("#textResult");
     
     textResult.css("color", textColor);
     textResult.css("font-size", size + "px");
