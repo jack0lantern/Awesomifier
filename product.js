@@ -3,7 +3,7 @@ function storeOriginal() {
 	originalText = document.forms["textAwesome"]["input"].value;
 }
 function getFonts(){
-    var fonts = ['Arial', 'Monospace', 'Times New Roman', 'Verdana'];
+    var fonts = ['Arial', 'Batang', 'Monospace', 'Symbol','Times New Roman', 'Verdana'];
     var begin = '<option value=\"';
     var middle = '\">';
     var end = '</option>';
