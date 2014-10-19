@@ -23,6 +23,28 @@ function setFont(){
     document.getElementById("textResult").innerHTML = textToAwesome;
 }
 
+function setCapitalization(){
+	var capitalization = do.forms["textAwesome"]["capitalization"].value;
+	var newText = "";
+	if(capitalization.equals("uppercase")){
+		newText += capitalization.toUpperCase();
+	}else if(capitalization.equals("lowercase")){
+		newText += capitalization.toLowerCase();
+	}else{
+		var textLength = capitalization.length();
+		for(int index = 0; index < capitalization.length; index++) {
+			var capitalize = Math.random() < .5;
+			if(capitalize)
+				newText += capitalization.charAt(index).toUpperCase();
+			else
+				newText += capitalization.charAt(index).toLowerCase();
+		}
+	}
+	
+	
+}
+	
+
 function total(){
     var textToAwesome = document.forms["textAwesome"]["input"].value;
     var size = document.forms["textAwesome"]["textSize"].value; 
